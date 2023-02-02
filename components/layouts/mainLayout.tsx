@@ -1,5 +1,7 @@
 import Head from 'next/head';
 import { FC } from 'react';
+import Footer from '../ui/Footer';
+import Navbar from '../ui/Navbar';
 
 interface Props {
   children: React.ReactNode;
@@ -16,8 +18,13 @@ export const MainLayout: FC<Props> = ({ children, title, pageDescription }) => {
         <meta name="description" content={pageDescription} />
         <meta name="og:description" content={pageDescription} />
       </Head>
+      <nav>
+        <Navbar />
+      </nav>
       <main>{children}</main>
-      <footer></footer>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 };
