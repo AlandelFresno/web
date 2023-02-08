@@ -1,41 +1,55 @@
-import { Box, Text } from '@chakra-ui/react';
+import { Box, Heading, ListIcon, ListItem, SimpleGrid, Text, UnorderedList } from '@chakra-ui/react';
 import React from 'react';
+import { defaultResponsive } from '../../utils/responsive-styles';
+import { BsCheckSquareFill } from 'react-icons/bs';
+import Image from 'next/image';
 
 const WhyUsSection = () => {
   return (
-    <Box paddingBlock={'50px'} width={'65%'} marginInline={'auto'} display={'flex'} flexDir={'column'} alignItems={'center'}>
-      <Text fontSize={'4xl'} fontWeight={'bold'} color={'white'}>
-        The Booleans Approach
+    <Box paddingBlock={'50px'} {...defaultResponsive} marginInline={'auto'} display={'flex'} flexDir={'column'} alignItems={'center'}>
+      <Heading size={'3xl'} fontWeight={'medium'}>
+        Why{' '}
+        <Heading as="span" size={'3xl'} color="#f89820">
+          Boolers?
+        </Heading>
+      </Heading>
+      <Text mt={'25px'} width={'65%'} textAlign={'center'} fontWeight={'medium'} fontSize={'lg'}>
+        We generate customers through online solutions tailored for your business with a incredible ROI
       </Text>
-      <br />
-      <Text fontSize={'1xl'} fontWeight={'bold'} color={'white'}>
-        At Stage Digital, we believe in providing personalized marketing solutions to drive sales and growth for our clients. Our process starts with analyzing
-        your brand's history, crafting a strategy that aligns with your vision, and executing campaigns that sell your product efficiently. We continuously
-        optimize and scale your campaigns using data, and our goal is to achieve a ROI of 4 or higher for every client.
-      </Text>
-      <br />
-      <Text fontSize={'1xl'} fontWeight={'bold'} color={'white'}>
-        Our team handles all aspects of the marketing process, from strategy development to campaign execution, so you can sit back and enjoy the results. For
-        businesses looking for more hands-on support, we offer consulting services to help your team understand the mechanics of profitable social media
-        advertising.
-      </Text>
-      <br />
-      <Text fontSize={'1xl'} fontWeight={'bold'} color={'white'}>
-        We treat your brand as our own and only recommend what we believe is best for your business. Prior to advertising your product, we always test it to
-        ensure quality and to gain a customer's perspective.
-      </Text>
-      <br />
-      <Text fontSize={'1xl'} fontWeight={'bold'} color={'white'}>
-        Book a free strategy call with us to discuss tailored solutions and how we can help grow your business. Our call is perfect for businesses looking to
-        increase online sales, optimize social media marketing efforts, and take their eCommerce presence to the next level.
-      </Text>
-      <br />
-      <Text fontSize={'1xl'} fontWeight={'bold'} color={'white'}>
-        We prioritize our clients and always direct our best resources towards achieving success for them, rather than pursuing new clients. Let's work together
-        to bring customers to your business through social media marketing.
-      </Text>
+      <Box marginTop={'120px'} display={'flex'} gap={'90px'}>
+        <SimpleGrid columns={2} spacing={10}>
+          <Image alt={'wave design'} src={'/assets/chart.svg'} width={400} height={100} />
+          <Box gridArea={'1 / 2'} display={'flex'} flexDir={'column'} gap={'20px'}>
+            <UnorderedList listStyleType={'none'} display={'flex'} flexDir={'column'} gap={'15px'}>
+              <ListItem display={'flex'} gap={'10px'}>
+                <ListIcon as={BsCheckSquareFill} height={'100%'} color="green.300" />
+                Personalized and effective online visibility solutions.
+              </ListItem>
+              <ListItem display={'flex'} gap={'10px'}>
+                <ListIcon as={BsCheckSquareFill} height={'100%'} color="green.300" /> Team of digital marketing experts.
+              </ListItem>
+              <ListItem display={'flex'} gap={'10px'}>
+                <ListIcon as={BsCheckSquareFill} height={'100%'} color="green.300" /> Results-focused approach to maximize ROI.
+              </ListItem>
+              <ListItem display={'flex'} gap={'10px'}>
+                <ListIcon as={BsCheckSquareFill} height={'100%'} color="green.300" />
+                Customized marketing campaigns to connect with audience.
+              </ListItem>
+              <ListItem display={'flex'} gap={'10px'}>
+                <ListIcon as={BsCheckSquareFill} height={'100%'} color="green.300" />
+                Comprehensive online presence solutions.
+              </ListItem>
+              <ListItem display={'flex'} gap={'10px'}>
+                <ListIcon as={BsCheckSquareFill} height={'100%'} color="green.300" />
+                Collaborative work with ambitious clients.
+              </ListItem>
+            </UnorderedList>
+          </Box>
+        </SimpleGrid>
+      </Box>
     </Box>
   );
 };
 
 export default WhyUsSection;
+

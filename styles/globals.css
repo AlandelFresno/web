@@ -3,6 +3,32 @@ body {
   padding: 0;
   margin: 0;
   height: 100vh;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  scroll-behavior: smooth !important;
 }
+
+#wave-vector-top {
+  width: 100%;
+  height: 300px;
+}
+
+#wave-vector-bottom {
+  width: 100%;
+  height: 70px;
+  -webkit-transform: scale(-1, -1);
+  transform: scale(-1, -1);
+}
+
+.svg-shadow {
+  animation: svg-shadow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes svg-shadow {
+  from {
+    filter: drop-shadow(0 0 5px #12343b) drop-shadow(0 0 15px #090f20) drop-shadow(0 0 20px #172038);
+  }
+
+  to {
+    filter: drop-shadow(0 0 20px #173d46) drop-shadow(0 0 25px #0c101b) drop-shadow(0 0 40px #182033);
+  }
+}
+

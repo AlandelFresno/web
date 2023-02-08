@@ -28,3 +28,4 @@ export const MainLayout: FC<Props> = ({ children, title, pageDescription }) => {
     </>
   );
 };
+
