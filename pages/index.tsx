@@ -14,7 +14,7 @@ const Home: NextPage = () => {
     "Boolers is a digital marketing agency dedicated to helping businesses increase their online presence. We focus on understanding each client's unique needs and goals to create customized strategies that help them achieve online success. With a creative mindset and innovative attitude, ongoing support to help maximize our clients' return on investment. If you're looking for an engaged, professional and creative digital marketing agency, look no further than Boolers - contact us today for a free strategy call!";
 
   return (
-    <MainLayout title="Home" pageDescription={pageDescription}>
+    <MainLayout title="Boolers - Digital Marketing Agency" pageDescription={pageDescription}>
       <Box
         pos={'absolute'}
         bgPos={'center'}
