@@ -38,13 +38,6 @@ const DosAndDontsList = () => {
             How We Don't Operate
           </Heading>
           <UnorderedList fontSize={'lg'} listStyleType={'none'} display={'flex'} flexDir={'column'} gap={'15px'}>
-            <ListItem display={'flex'} alignItems={'center'} gap={'10px'}>
-              <ListIcon as={AiFillCloseCircle} width={'30px'} height={'100%'} color="red.300" />
-              We do not create your advertising campaign materials.
-            </ListItem>
-            <ListItem display={'flex'} gap={'10px'}>
-              <ListIcon as={AiFillCloseCircle} width={'30px'} height={'100%'} color="red.300" /> We do not charge for the registration process on our platform.
-            </ListItem>
             <ListItem display={'flex'} gap={'10px'}>
               <ListIcon as={AiFillCloseCircle} width={'30px'} height={'100%'} color="red.300" /> We do not charge for the registration process on our platform.
             </ListItem>

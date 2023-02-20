@@ -33,7 +33,7 @@ const HomeSection: FC = () => {
           </Heading>
         </Box>
         <Text color={'gray.600'} fontSize={'xl'} width={'80%'}>
-          Leave the hard work to us and see your social media reach grow exponentially with our tailored strategies
+          Leave the hard work to us and see your business online presence grow with our tailored strategies
         </Text>
         <Link href={'#contact'}>
           <Button

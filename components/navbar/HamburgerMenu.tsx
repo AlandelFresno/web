@@ -20,6 +20,9 @@ const HamburgerMenu = () => {
         <MenuItem as={Link} href="#about">
           About
         </MenuItem>
+        <MenuItem as={Link} href="#contact">
+          Contact
+        </MenuItem>
       </MenuList>
     </Menu>
   );

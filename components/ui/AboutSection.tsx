@@ -18,9 +18,9 @@ const AboutSection = () => {
         </Box>
         <Box width={{ base: '100%', md: '50%' }}>
           <Text mt={'25px'} fontWeight={'medium'} fontSize={'lg'}>
-            At Boolers we are a digital marketing agency with a <b>dynamic and creative personality</b> that is always looking to{' '}
-            <b>innovate to provide customized and effective solutions</b> to our clients. We are <b>passionate</b> about the world of digital marketing and work
-            with <b>dedication</b> to help companies achieve their goals.
+            At Boolers we are a digital marketing agency with a <b>dynamic and creative personality</b> that is always{' '}
+            <b>innovating to provide customized and effective solutions</b> to our clients. We are <b>passionate</b> about the world of online marketing and
+            work with <b>dedication</b> to help companies achieve their goals.
           </Text>
           <Text mt={'25px'} fontWeight={'medium'} fontSize={'lg'}>
             We believe in <b>transparency, honesty and establishing trusting relationships</b> with our clients, so that together we achieve success in every

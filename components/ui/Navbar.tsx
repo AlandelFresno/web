@@ -8,7 +8,6 @@ import HamburgerMenu from '../navbar/HamburgerMenu';
 
 const Navbar: FC = () => {
   const [showNav, setShowNav] = useState(true);
-  const [showBorder, setShowBorder] = useState(false);
   const [showBg, setShowBg] = useState(false);
 
   const getBackgroundCheckpoint = () => {
@@ -58,8 +57,8 @@ const Navbar: FC = () => {
         alignItems={'center'}
         justifyContent={'space-between'}
         height={'70px'}>
-        <Box marginBottom={'7px'} pos={'relative'} width={'150px'} height={'100%'}>
-          <Image src="/assets/logo-transparent.png" alt="Company logo" style={{ objectFit: 'contain' }} fill sizes="150px" />
+        <Box marginBottom={'7px'} pos={'relative'} width={'150px'} height={'70px'} maxHeight={'70px'}>
+          <Image src="/assets/logo-transparent.png" alt="Company logo" style={{ objectFit: 'contain' }} fill sizes={'150px'} />
         </Box>
         <UnorderedList display={{ base: 'none', md: 'flex' }} listStyleType={'none'} gap={'25px'} fontSize={'md'}>
           <OptionButton text="Home" href="#home" />

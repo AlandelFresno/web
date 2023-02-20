@@ -8,7 +8,6 @@ import AboutSection from '../components/ui/AboutSection';
 import ApproachSection from '../components/ui/ApproachSection';
 import Image from 'next/image';
 import PersuadeStrategyCall from '../components/approach/PersuadeStrategyCall';
-import { motion } from 'framer-motion';
 
 const Home: NextPage = () => {
   return (
@@ -25,9 +24,7 @@ const Home: NextPage = () => {
         width={'100%'}
       />
       <Box pos={'absolute'} backdropFilter={'blur(4.5px)'} bgSize={'cover'} zIndex={'-1'} height={'100%'} width={'100%'} />
-      <motion.div initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 1 }}>
-        <HomeSection />
-      </motion.div>
+      <HomeSection />
       <Image id={'wave-vector-top'} alt={'wave design'} src={'/assets/wavev2.svg'} width={100} height={100} />
       <Box
         className="wapa"

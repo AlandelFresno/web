@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint"
   },
-  "dependencies": {
+  "devDependencies": {
     "@chakra-ui/react": "^2.4.9",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
@@ -23,7 +23,6 @@
     "eslint": "^8.31.0",
     "eslint-config-next": "13.1.1",
     "eslint-config-prettier": "^8.6.0",
-    "framer-motion": "^8.5.5",
     "next": "13.1.1",
     "prettier": "^2.8.3",
     "react": "18.2.0",
