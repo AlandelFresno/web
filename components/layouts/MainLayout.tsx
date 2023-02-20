@@ -17,6 +17,7 @@ export const MainLayout: FC<Props> = ({ children, title, pageDescription }) => {
         <meta name="og:title" content={title} />
         <meta name="description" content={pageDescription} />
         <meta name="og:description" content={pageDescription} />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <nav>
         <Navbar />

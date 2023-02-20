@@ -51,7 +51,7 @@ const HomeSection: FC = () => {
         </Link>
       </Box>
       <Box display={{ base: 'none', lg: 'block' }} marginBlock={'auto'}>
-        <Image alt={'wave design'} src={'/assets/collaboration.svg'} width={900} height={900} />
+        <Image alt={'A photo of a team working together to draw a chart'} src={'/assets/collaboration.svg'} width={900} height={900} />
       </Box>
     </SimpleGrid>
   );

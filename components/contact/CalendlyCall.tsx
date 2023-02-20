@@ -31,7 +31,7 @@ const CalendlyCall = () => {
             width={'250px'}
             height={'250px'}
             border={'10px solid white'}>
-            <Image src={'/assets/martin.jpg'} alt={'a photo of Martin Farres, our sales representative'} width={250} height={100} />
+            <Image src={'/assets/martin-profile-photo.jpg'} alt={'a photo of Martin Farres, our sales representative'} width={250} height={100} />
           </Box>
           <Heading marginBlock={'12px'} size={'lg'}>
             Book a{' '}

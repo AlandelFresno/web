@@ -10,8 +10,11 @@ import Image from 'next/image';
 import PersuadeStrategyCall from '../components/approach/PersuadeStrategyCall';
 
 const Home: NextPage = () => {
+  const pageDescription =
+    "Boolers is a digital marketing agency dedicated to helping businesses increase their online presence. We focus on understanding each client's unique needs and goals to create customized strategies that help them achieve online success. With a creative mindset and innovative attitude, ongoing support to help maximize our clients' return on investment. If you're looking for an engaged, professional and creative digital marketing agency, look no further than Boolers - contact us today for a free strategy call!";
+
   return (
-    <MainLayout title="Home">
+    <MainLayout title="Home" pageDescription={pageDescription}>
       <Box
         pos={'absolute'}
         bgPos={'center'}
@@ -25,7 +28,7 @@ const Home: NextPage = () => {
       />
       <Box pos={'absolute'} backdropFilter={'blur(4.5px)'} bgSize={'cover'} zIndex={'-1'} height={'100%'} width={'100%'} />
       <HomeSection />
-      <Image id={'wave-vector-top'} alt={'wave design'} src={'/assets/wavev2.svg'} width={100} height={100} />
+      <Image id={'wave-vector-top'} alt={'An illustration of a black wave'} src={'/assets/wavetop.svg'} width={100} height={100} />
       <Box
         className="wapa"
         position={'relative'}
@@ -44,7 +47,7 @@ const Home: NextPage = () => {
           bgSize={'cover'}
           zIndex={'-1'}
           opacity={'0.40'}
-          bgImage={'./assets/moon2.svg'}
+          bgImage={'./assets/moon-background.svg'}
           height={'100%'}
           width={'100%'}
         />
@@ -54,7 +57,7 @@ const Home: NextPage = () => {
         <AboutSection />
         <ContactSection />
       </Box>
-      <Image id={'wave-vector-bottom'} alt={'wave design'} src={'/assets/wavebottom.svg'} width={100} height={100} />
+      <Image id={'wave-vector-bottom'} alt={'An illustration of a black wave'} src={'/assets/wavebottom.svg'} width={100} height={100} />
     </MainLayout>
   );
 };
