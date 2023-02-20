@@ -1,14 +1,15 @@
 import { extendTheme } from '@chakra-ui/react';
 
 export default extendTheme({
-  // styles: {
-  //   global: {
-  //     body: {
-  //       color: "blackAlpha.900",
-  //       bg: '#ededed'
-  //     },
-  //   },
-  // },
+  initialColorMode: 'dark',
+  styles: {
+    global: {
+      body: {
+        // color: "blackAlpha.900",
+        // bg: '#ededed',
+      },
+    },
+  },
   // colors: {
   //   primary: {
   //     50: "#FFF9BD",
@@ -102,3 +103,4 @@ export default extendTheme({
   //   },
   // },
 });
+
