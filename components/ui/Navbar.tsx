@@ -3,14 +3,17 @@ import { Box, Button, Text, UnorderedList } from '@chakra-ui/react';
 import Image from 'next/image';
 import OptionButton from '../navbar/OptionButton';
 import { defaultResponsive } from '../../utils/responsive-styles';
+import Link from 'next/link';
+import HamburgerMenu from '../navbar/HamburgerMenu';
 
 const Navbar: FC = () => {
   const [showNav, setShowNav] = useState(true);
   const [showBorder, setShowBorder] = useState(false);
+  const [showBg, setShowBg] = useState(false);
 
-  const getBorderCheckpoint = () => {
-    const checkpoint = document.querySelector('#wave-vector-top') as HTMLElement;
-    const topPosition = checkpoint.offsetTop;
+  const getBackgroundCheckpoint = () => {
+    const checkpoint = document.querySelector('#home')?.firstElementChild as HTMLElement;
+    const topPosition = checkpoint.offsetTop * 3;
     return topPosition;
   };
 
@@ -21,8 +24,8 @@ const Navbar: FC = () => {
     window.addEventListener('scroll', function () {
       // Get the new Value
       currentScrollPosition = window.pageYOffset;
-      const borderCheckpoint = getBorderCheckpoint();
-      borderCheckpoint < this.window.scrollY ? setShowBorder(true) : setShowBorder(false);
+      const bgCheckpoint = getBackgroundCheckpoint();
+      bgCheckpoint < this.window.scrollY ? setShowBg(true) : setShowBg(false);
 
       //Subtract the two and conclude
       if (previousScrollPosition - currentScrollPosition < 0) {
@@ -39,10 +42,9 @@ const Navbar: FC = () => {
   return (
     <Box
       position={'fixed'}
-      zIndex={'1'}
+      zIndex={'2'}
       width={'100%'}
-      bgColor={'white'}
-      borderBottom={showBorder ? '1px solid #e1e1e1' : ''}
+      bgColor={!showBg ? 'transparent' : 'white'}
       visibility={showNav ? 'visible' : 'hidden'}
       opacity={showNav ? 1 : 0}
       transition={'all ease 200ms'}
@@ -56,18 +58,25 @@ const Navbar: FC = () => {
         alignItems={'center'}
         justifyContent={'space-between'}
         height={'70px'}>
-        <Image src="/assets/full-logo-white.jpg" alt="Company logo" style={{ marginBottom: '7px' }} width="150" height="200" />
-        <UnorderedList listStyleType={'none'} display={'flex'} gap={'25px'} fontSize={'md'}>
+        <Box marginBottom={'7px'} pos={'relative'} width={'150px'} height={'100%'}>
+          <Image src="/assets/logo-transparent.png" alt="Company logo" style={{ objectFit: 'contain' }} fill sizes="150px" />
+        </Box>
+        <UnorderedList display={{ base: 'none', md: 'flex' }} listStyleType={'none'} gap={'25px'} fontSize={'md'}>
+          <OptionButton text="Home" href="#home" />
           <OptionButton text="Approach" href="#approach" />
           <OptionButton text="Services" href="#services" />
-          <OptionButton text="Case Studies" href="#case-studies" />
           <OptionButton text="About" href="#about" />
         </UnorderedList>
-        <Button transition={'all 200ms linear'} _hover={{ bgColor: '#3eadcd', transform: 'scale(1.03)' }} bgColor={'#1a7791'}>
-          <Text color={'white'} fontSize={'md'} fontWeight={'bold'}>
-            Contact
-          </Text>
-        </Button>
+        <Box display={{ base: 'none', md: 'flex' }} as={Link} href={'#contact'}>
+          <Button transition={'all 200ms linear'} _hover={{ bgColor: '#3eadcd', transform: 'scale(1.03)' }} bgColor={'#1a7791'}>
+            <Text color={'white'} fontSize={'md'} fontWeight={'bold'}>
+              Contact
+            </Text>
+          </Button>
+        </Box>
+        <Box display={{ md: 'none' }}>
+          <HamburgerMenu />
+        </Box>
       </Box>
     </Box>
   );

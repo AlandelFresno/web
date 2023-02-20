@@ -21,7 +21,7 @@ export const MainLayout: FC<Props> = ({ children, title, pageDescription }) => {
       <nav>
         <Navbar />
       </nav>
-      <main>{children}</main>
+      <main style={{ overflow: 'hidden' }}>{children}</main>
       <footer>
         <Footer />
       </footer>

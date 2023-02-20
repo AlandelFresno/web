@@ -4,15 +4,30 @@ import { MainLayout } from '../components/layouts/MainLayout';
 import ContactSection from '../components/ui/ContactSection';
 import HomeSection from '../components/ui/HomeSection';
 import ServicesSection from '../components/ui/ServicesSection';
-import WhyUsSection from '../components/ui/WhyUsSection';
+import AboutSection from '../components/ui/AboutSection';
 import ApproachSection from '../components/ui/ApproachSection';
 import Image from 'next/image';
+import PersuadeStrategyCall from '../components/approach/PersuadeStrategyCall';
+import { motion } from 'framer-motion';
 
 const Home: NextPage = () => {
   return (
     <MainLayout title="Home">
-      <Box height={'70px'} />
-      <HomeSection />
+      <Box
+        pos={'absolute'}
+        bgPos={'center'}
+        transform={'scale(-1, 1)'}
+        bgSize={'cover'}
+        zIndex={'-1'}
+        opacity={'0.35'}
+        bgImage={'./assets/connected-background.svg'}
+        height={'100%'}
+        width={'100%'}
+      />
+      <Box pos={'absolute'} backdropFilter={'blur(4.5px)'} bgSize={'cover'} zIndex={'-1'} height={'100%'} width={'100%'} />
+      <motion.div initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 1 }}>
+        <HomeSection />
+      </motion.div>
       <Image id={'wave-vector-top'} alt={'wave design'} src={'/assets/wavev2.svg'} width={100} height={100} />
       <Box
         className="wapa"
@@ -36,9 +51,10 @@ const Home: NextPage = () => {
           height={'100%'}
           width={'100%'}
         />
-        <ApproachSection />
-        <WhyUsSection />
         <ServicesSection />
+        <PersuadeStrategyCall />
+        <ApproachSection />
+        <AboutSection />
         <ContactSection />
       </Box>
       <Image id={'wave-vector-bottom'} alt={'wave design'} src={'/assets/wavebottom.svg'} width={100} height={100} />

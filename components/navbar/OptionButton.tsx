@@ -11,7 +11,12 @@ interface Props {
 const OptionButton: FC<Props> = ({ text, href }) => {
   return (
     <Link href={href}>
-      <ListItem px={'12px'} borderRadius={'xl'} transition={'all 150ms linear'} _hover={{ bgColor: '#2db6ff14', color: 'blue', transform: 'scale(1.02)' }}>
+      <ListItem
+        color={'#082639'}
+        px={'12px'}
+        borderRadius={'xl'}
+        transition={'all 150ms linear'}
+        _hover={{ bgColor: '#1a779114', color: '#1a7791', transform: 'scale(1.02)' }}>
         {text}
       </ListItem>
     </Link>

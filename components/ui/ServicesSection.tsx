@@ -1,46 +1,41 @@
-import { Box, Heading, Text, SimpleGrid } from '@chakra-ui/react';
+import { Box, Heading, Text } from '@chakra-ui/react';
 import React from 'react';
 import { defaultResponsive } from '../../utils/responsive-styles';
+import Service from '../services/Service';
+import { motion } from 'framer-motion';
 
 const ServicesSection = () => {
   return (
     <Box id={'services'} paddingBlock={'50px'} {...defaultResponsive} marginInline={'auto'} display={'flex'} flexDir={'column'} alignItems={'center'}>
       <Heading size={'3xl'} fontWeight={'medium'}>
-        Social Media{' '}
+        Our{' '}
         <Text as={'span'} color={'#1A7791'}>
-          Advertising
+          Services
         </Text>
       </Heading>
-      <Text mt={'25px'} width={'65%'} textAlign={'center'} fontWeight={'medium'} fontSize={'lg'}>
+      <Text mt={'25px'} width={{ base: '95%', md: '65%' }} textAlign={'center'} fontWeight={'medium'} fontSize={'lg'}>
         We specialize in utilizing the data and targeting capabilities of social media platforms to reach your desired audience.
       </Text>
-      <Box marginTop={'120px'} display={'flex'} flexDir={'column'} gap={'90px'}>
-        <SimpleGrid columns={2} spacing={10}>
-          <Box bgColor={'blackAlpha.600'} borderRadius={'2xl'} gridArea={'1 / 2'} display={'flex'} padding={'14px'} flexDir={'column'} gap={'20px'}>
-            <Heading size={'md'}>Cost-Effective</Heading>
-            <Text fontSize={'1xl'} fontWeight={'medium'}>
-              Cost-Effective Social media advertising is a cost-effective way to reach a large, targeted audience and drive results for your business.
-            </Text>
-          </Box>
-        </SimpleGrid>
-        <SimpleGrid columns={2} spacing={10}>
-          <Box bgColor={'blackAlpha.600'} borderRadius={'2xl'} gridArea={'1 / 2'} display={'flex'} padding={'14px'} flexDir={'column'} gap={'20px'}>
-            <Heading size={'md'}>Customized Solutions</Heading>
-            <Text fontSize={'1xl'} fontWeight={'medium'}>
-              Our team will collaborate with you to define your target audience and business goals, then design a tailored social media advertising plan to
-              achieve them. We'll ensure that the ads we create are engaging and reach your target audience effectively.
-            </Text>
-          </Box>
-        </SimpleGrid>
-        <SimpleGrid columns={2} spacing={10}>
-          <Box bgColor={'blackAlpha.600'} borderRadius={'2xl'} gridArea={'1 / 2'} display={'flex'} padding={'14px'} flexDir={'column'} gap={'20px'}>
-            <Heading size={'md'}>Increased Brand Awareness</Heading>
-            <Text fontSize={'1xl'} fontWeight={'medium'}>
-              By reaching a wider audience and engaging with your target market, our social media advertising services will increase your brand's awareness and
-              exposure.
-            </Text>
-          </Box>
-        </SimpleGrid>
+      <Box marginTop={'40px'} display={'flex'} flexDir={'column'} gap={'70px'}>
+        <motion.div initial={{ opacity: 0, x: -250 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 1 }}>
+          <Service heading="Social Media Advertising" imagePath="/assets/viral.svg" scale={1.2} topOffset={-2}>
+            One of the most effective ways to reach a wider audience and increase brand awareness. Boolers can help companies create social media advertising
+            campaigns that are specific to their target audience.
+          </Service>
+        </motion.div>
+        <motion.div initial={{ opacity: 0, x: 250 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 1 }}>
+          <Service heading="Community Management" imagePath="/assets/online-community.svg" scale={1.2} topOffset={0} orderReverse>
+            Professional who is responsible for managing and administering a company's online presence on social networks. The goal of this service is to create
+            an active and engaged community with the brand, thus increasing the company's online reach and visibility.
+          </Service>
+        </motion.div>
+        {/* <Service
+          heading="Content strategy"
+          text="Essential for any business that wants to attract and retain its target audience. Boolers can help companies create a customized content strategy
+          that includes content creation, blog management and content distribution across multiple platforms"
+          imagePath="/assets/content-manager.svg.svg"
+          orderReverse
+        /> */}
       </Box>
     </Box>
   );
