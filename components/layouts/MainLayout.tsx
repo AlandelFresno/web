@@ -17,6 +17,11 @@ export const MainLayout: FC<Props> = ({ children, title, pageDescription }) => {
         <meta name="og:title" content={title} />
         <meta name="description" content={pageDescription} />
         <meta name="og:description" content={pageDescription} />
+        <meta name="og:image" content="https://i.imgur.com/rDLFkh0.png" />
+        <meta name="og:url" content="boolers.net" />
+        <meta name="og:type" content="website" />
+        <meta name="og:site_name" content="Boolers" />
+        <meta name="og:locale" content="en_US" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <nav>
