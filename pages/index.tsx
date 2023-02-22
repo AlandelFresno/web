@@ -26,7 +26,7 @@ const Home: NextPage = () => {
         height={'100%'}
         width={'100%'}
       />
-      <Box pos={'absolute'} backdropFilter={'blur(4.5px)'} bgSize={'cover'} zIndex={'-1'} height={'100%'} width={'100%'} />
+      {/* <Box pos={'absolute'} backdropFilter={'blur(4.5px)'} bgSize={'cover'} zIndex={'-1'} height={'100%'} width={'100%'} /> */}
       <HomeSection />
       <Box width={'100%'} position={'relative'} height={'300px'} overflow={'hidden'}>
         <Image id={'wave-vector-top'} alt={'An illustration of a black wave'} src={'/assets/wavetop.svg'} fill />
