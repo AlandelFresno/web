@@ -14,7 +14,12 @@ const AboutSection = () => {
       </Heading>
       <Box marginTop={'15px'} display={'flex'} flexDir={{ base: 'column', md: 'row' }} gap={'35px'} alignItems={'center'}>
         <Box width={{ base: '100%', md: '50%' }}>
-          <Image alt={'wave design'} src={'/assets/sales-team.svg'} width={900} height={900} />
+          <Image
+            alt={'Two businessmen shaking hands, with various graphics and illustrations in the background.'}
+            src={'/assets/sales-team.svg'}
+            width={900}
+            height={900}
+          />
         </Box>
         <Box width={{ base: '100%', md: '50%' }}>
           <Text mt={'25px'} fontWeight={'medium'} fontSize={'lg'}>
