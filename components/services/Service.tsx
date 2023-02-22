@@ -45,8 +45,8 @@ const Service: FC<Props> = ({ heading, children, imagePath, imageAlt, scale, top
           {children}
         </Text>
       </GridItem>
-      <GridItem order={{ base: -1, md: orderReverse ? -1 : 1 }}>
-        <Box marginBlock={'auto'} height={'250px'} position={'relative'} top={topOffset} transform={`scale(${scale})`}>
+      <GridItem display={'flex'} justifyContent={'center'} order={{ base: -1, md: orderReverse ? -1 : 1 }}>
+        <Box marginBlock={'auto'} width={'100%'} height={'250px'} position={'relative'} top={topOffset} transform={`scale(${scale})`}>
           <Image alt={imageAlt ?? 'An irrelevant icon'} src={imagePath} fill style={{ objectFit: 'contain' }} />
         </Box>
       </GridItem>

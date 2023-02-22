@@ -19,7 +19,7 @@ const CalendlyCall = () => {
         gridTemplateColumns={'1fr 1fr'}>
         <Box display={'flex'} flexDir={'column'} gap={'20px'}>
           <Box bg={'white'} height={'780px'} overflow={'hidden'} borderRadius={'20px'} width={{ md: 'inherit' }}>
-            <InlineWidget styles={{ height: '780px', marginInline: 'auto' }} url="https://calendly.com/boolersagency/30min" />
+            <InlineWidget styles={{ height: '780px', marginInline: 'auto' }} url="https://calendly.com/boolers/30min" />
           </Box>
         </Box>
         <Box order={{ base: -1, md: 1 }} display={'flex'} flexDir={'column'} gap={'15px'}>
