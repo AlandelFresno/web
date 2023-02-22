@@ -1,7 +1,7 @@
 import { Box } from '@chakra-ui/react';
 import { NextPage } from 'next';
 import { MainLayout } from '../components/layouts/MainLayout';
-import Terms from '../components/tos/Terms';
+import Terms from '../components/tos/PrivacyPolicy';
 import { defaultResponsive } from '../utils/responsive-styles';
 
 const Home: NextPage = () => {
