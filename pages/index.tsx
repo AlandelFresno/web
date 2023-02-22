@@ -15,7 +15,7 @@ const Home: NextPage = () => {
 
   return (
     <MainLayout title="Boolers - Digital Marketing Agency" pageDescription={pageDescription}>
-      <Box
+      {/* <Box
         pos={'absolute'}
         bgPos={'center'}
         transform={'scale(-1, 1)'}
@@ -25,7 +25,7 @@ const Home: NextPage = () => {
         bgImage={'./assets/connected-background.svg'}
         height={'100%'}
         width={'100%'}
-      />
+      /> */}
       {/* <Box pos={'absolute'} backdropFilter={'blur(4.5px)'} bgSize={'cover'} zIndex={'-1'} height={'100%'} width={'100%'} /> */}
       <HomeSection />
       <Box width={'100%'} position={'relative'} height={'300px'} overflow={'hidden'}>
