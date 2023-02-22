@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const AboutSection = () => {
   return (
-    <Box id={'about'} paddingTop={'90px'} {...defaultResponsive} marginInline={'auto'} display={'flex'} flexDir={'column'} alignItems={'center'}>
+    <Box id={'about'} paddingTop={'40px'} {...defaultResponsive} marginInline={'auto'} display={'flex'} flexDir={'column'} alignItems={'center'}>
       <Heading textAlign={'center'} size={'3xl'} fontWeight={'medium'}>
         About{' '}
         <Heading as="span" size={'3xl'} color="#f89820">

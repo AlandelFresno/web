@@ -15,7 +15,7 @@ const Home: NextPage = () => {
 
   return (
     <MainLayout title="Boolers - Digital Marketing Agency" pageDescription={pageDescription}>
-      {/* <Box
+      <Box
         pos={'absolute'}
         bgPos={'center'}
         transform={'scale(-1, 1)'}
@@ -25,10 +25,10 @@ const Home: NextPage = () => {
         bgImage={'./assets/connected-background.svg'}
         height={'100%'}
         width={'100%'}
-      /> */}
-      {/* <Box pos={'absolute'} backdropFilter={'blur(4.5px)'} bgSize={'cover'} zIndex={'-1'} height={'100%'} width={'100%'} /> */}
+      />
+      <Box pos={'absolute'} backdropFilter={'blur(4.5px)'} bgSize={'cover'} zIndex={'-1'} height={'100%'} width={'100%'} />
       <HomeSection />
-      <Box width={'100%'} position={'relative'} height={'300px'} overflow={'hidden'}>
+      <Box width={'100%'} position={'relative'} height={{ base: '150px', sm: '200px', lg: '300px' }} overflow={'hidden'}>
         <Image id={'wave-vector-top'} alt={'An illustration of a black wave'} src={'/assets/wavetop.svg'} fill />
       </Box>
       <Box
@@ -47,7 +47,6 @@ const Home: NextPage = () => {
           bgPos={'center'}
           bgSize={'cover'}
           zIndex={'-1'}
-          // filter={'drop-shadow(0 0 5px #12343b) drop-shadow(0 0 15px #090f20) drop-shadow(0 0 20px #172038)'}
           opacity={'0.40'}
           bgImage={'./assets/moon-background.svg'}
           height={'100%'}

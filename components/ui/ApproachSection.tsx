@@ -17,7 +17,7 @@ const ApproachSection = () => {
       <Text mt={'25px'} width={{ base: '95%', md: '65%' }} textAlign={'center'} fontWeight={'medium'} fontSize={'lg'}>
         Do you want to increase the visibility of your business and make your sales soar? Let us take care of it.
       </Text>
-      <Box marginTop={'45px'} display={'flex'} flexDir={'column'} gap={{ base: '80px', md: '40px' }}>
+      <Box marginTop={'45px'} display={'flex'} flexDir={'column'} gap={{ base: '40px' }}>
         <Approach imageAlt="An illustration of a rocket going to a target" heading="Customized Business Solution" imagePath="/assets/goal.svg" scale={1.1}>
           We believe in the power of a personalized approach. That's why our team of experts takes the time to get to know your business, creating custom
           strategies that are tailored to meet your unique goals

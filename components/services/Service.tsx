@@ -29,6 +29,7 @@ const Service: FC<Props> = ({ heading, children, imagePath, imageAlt, scale, top
         height={'100%'}
       />
       <GridItem
+        textAlign={{ base: 'start' }}
         overflow={'hidden'}
         rowSpan={{ base: 2, md: 1 }}
         colSpan={{ md: 2 }}
