@@ -35,10 +35,10 @@ const CalendlyCall = () => {
             style={{ objectFit: 'cover' }}>
             <Image
               src={'/assets/martin-profile-photo.jpg'}
-              objectFit={'cover'}
-              objectPosition={'top'}
+              style={{ objectFit: 'cover' }}
               alt={'a photo of Martin Farres, our sales representative'}
-              layout={'fill'}
+              width={'500'}
+              height={'500'}
             />
           </Box>
           <Heading marginBlock={'12px'} size={'lg'}>

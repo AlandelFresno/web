@@ -46,7 +46,7 @@ const Approach: FC<Props> = ({ heading, children, imagePath, imageAlt, scale, to
           position={'relative'}
           top={topOffset}
           transform={`scale(${scale})`}>
-          <Image alt={imageAlt ?? 'An irrelevant image'} src={imagePath} layout={'fill'} style={{ objectFit: 'contain' }} />
+          <Image alt={imageAlt ?? 'An irrelevant image'} src={imagePath} fill style={{ objectFit: 'contain' }} />
         </Box>
       </GridItem>
     </Grid>
