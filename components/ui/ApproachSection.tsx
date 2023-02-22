@@ -27,8 +27,8 @@ const ApproachSection = () => {
           ensure your campaigns are on track.
         </Approach>
         <Approach imageAlt="A man and a woman holding a golden key" heading="Marketing Made Easy" imagePath="/assets/secret.svg">
-          Let us handle the entire marketing process, from strategy to execution, so you can relax and see the results. For those seeking more guidance, we
-          offer consulting services to help your team grasp the fundamentals of successful social media advertising.
+          Let us handle the entire marketing process, from strategy to execution, so you can relax and see the results. <br />
+          For those seeking more guidance, we offer consulting services to help your team grasp the fundamentals of successful social media advertising.
         </Approach>
         <Approach
           imageAlt="A cell phone with a magnifying glass indicating that its applications are being tested"

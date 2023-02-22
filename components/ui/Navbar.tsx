@@ -8,13 +8,6 @@ import HamburgerMenu from '../navbar/HamburgerMenu';
 
 const Navbar: FC = () => {
   const [showNav, setShowNav] = useState(true);
-  const [showBg, setShowBg] = useState(false);
-
-  const getBackgroundCheckpoint = () => {
-    const checkpoint = document.querySelector('#home')?.firstElementChild as HTMLElement;
-    const topPosition = checkpoint.offsetTop * 3;
-    return topPosition;
-  };
 
   useEffect(() => {
     let previousScrollPosition = 0;
@@ -23,8 +16,6 @@ const Navbar: FC = () => {
     window.addEventListener('scroll', function () {
       // Get the new Value
       currentScrollPosition = window.pageYOffset;
-      const bgCheckpoint = getBackgroundCheckpoint();
-      bgCheckpoint < this.window.scrollY ? setShowBg(true) : setShowBg(false);
 
       //Subtract the two and conclude
       if (previousScrollPosition - currentScrollPosition < 0) {
@@ -43,7 +34,7 @@ const Navbar: FC = () => {
       position={'fixed'}
       zIndex={'2'}
       width={'100%'}
-      bgColor={!showBg ? 'transparent' : 'white'}
+      bgColor={'white'}
       visibility={showNav ? 'visible' : 'hidden'}
       opacity={showNav ? 1 : 0}
       transition={'all ease 200ms'}
@@ -61,10 +52,10 @@ const Navbar: FC = () => {
           <Image src="/assets/logo-transparent.png" alt="Boolers company logo" style={{ objectFit: 'contain' }} fill sizes={'150px'} />
         </Box>
         <UnorderedList display={{ base: 'none', md: 'flex' }} listStyleType={'none'} gap={'25px'} fontSize={'md'}>
-          <OptionButton text="Home" href="#home" />
-          <OptionButton text="Approach" href="#approach" />
-          <OptionButton text="Services" href="#services" />
-          <OptionButton text="About" href="#about" />
+          <OptionButton text="Home" href="/#home" />
+          <OptionButton text="Approach" href="/#approach" />
+          <OptionButton text="Services" href="/#services" />
+          <OptionButton text="About" href="/#about" />
         </UnorderedList>
         <Box display={{ base: 'none', md: 'flex' }} as={Link} href={'#contact'}>
           <Button transition={'all 200ms linear'} _hover={{ bgColor: '#3eadcd', transform: 'scale(1.03)' }} bgColor={'#1a7791'}>

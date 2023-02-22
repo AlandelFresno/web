@@ -15,9 +15,16 @@ const Footer: FC = () => {
       alignItems={'center'}
       justifyContent={'space-between'}
       height={'70px'}>
-      <Text textAlign={'center'} fontSize={'md'}>
-        Copyright © 2023 Boolers | Powered by Boolers
-      </Text>
+      <Box display={'flex'} alignItems={'center'} gap={'10px'}>
+        <Text textAlign={'center'} fontSize={'md'}>
+          Copyright © 2023 Boolers | Powered by Boolers
+        </Text>
+        <Link href={'privacy-policy'}>
+          <Button _hover={{ color: '#1a7791' }} variant={'ghost'}>
+            <Text fontWeight={'medium'}>Privacy Policy</Text>
+          </Button>
+        </Link>
+      </Box>
       <Box display={'flex'} gap={'10px'}>
         <Box display={'flex'} alignItems={'center'}>
           <Link href={'https://www.linkedin.com/company/boolers-smma/'}>
@@ -37,7 +44,7 @@ const Footer: FC = () => {
           </Link>
         </Box>
         <Link href={'#home'}>
-          <Button _hover={{ bgColor: '#37a6ff14' }} variant={'ghost'}>
+          <Button _hover={{ bgColor: '#1a779114' }} variant={'ghost'}>
             <Text fontWeight={'medium'}>To the top</Text>
           </Button>
         </Link>

@@ -43,7 +43,13 @@ const Formulary = () => {
   };
 
   return (
-    <Box boxShadow={'0px -15px 8px -9px #0d12185e'} width={'100% !important'} marginTop={'220px'} marginInline={'auto'} backgroundColor={'blackAlpha.800'}>
+    <Box
+      id="contact-email"
+      boxShadow={'0px -15px 8px -9px #0d12185e'}
+      width={'100% !important'}
+      marginTop={'220px'}
+      marginInline={'auto'}
+      backgroundColor={'blackAlpha.800'}>
       <Box {...defaultResponsive} paddingTop={'60px'} marginInline={'auto'}>
         <Box textAlign={'center'} display={'flex'} flexDir={'column'} alignItems={'center'} gap={'10px'}>
           <Heading>Do you have any questions?</Heading>

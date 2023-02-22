@@ -22,8 +22,9 @@ const ServicesSection = () => {
           imagePath="/assets/viral.svg"
           scale={1.2}
           topOffset={-2}>
-          Our social media advertising services can help increase brand awareness, drive sales, and target the right audience with compelling ad content. We
-          offer customized strategies, effective campaign execution, and ongoing optimization to help you achieve a high return on investment (ROI).
+          The social media advertising services we offer are designed to boost brand awareness, drive sales, and effectively target the desired audience with
+          compelling ad content. <br />
+          <br /> We offer customized strategies, effective campaign execution, and ongoing optimization to help you achieve a high return on investment (ROI).
         </Service>
         <Service
           imageAlt="A table with 3 people around it, cell phones, computers and emojis representing interactions."
@@ -33,8 +34,10 @@ const ServicesSection = () => {
           topOffset={0}
           orderReverse>
           Our community management services help you build a loyal and engaged following, create a sense of community around your brand, increase brand
-          recognition, and drive traffic to your website with the help of Social Media. We offer custom strategies to fit your brand's unique voice, values, and
-          goals, and our experienced team is dedicated to helping you achieve your business objectives.
+          recognition, and drive traffic to your website with the help of Social Media. <br />
+          <br />
+          We offer custom strategies to fit your brand's unique voice, values, and goals, and our experienced team is dedicated to helping you achieve your
+          business objectives.
         </Service>
         <Service
           imageAlt="A man with a notebook programming in JS, with code in background"
@@ -43,8 +46,10 @@ const ServicesSection = () => {
           scale={1.3}
           topOffset={0}>
           Our team of web development experts create customized and personalized websites that fit your business goals. Whether you're looking for a basic page
-          or a more advanced user experience, we can help you achieve it. We offer design, development, and maintenance. We ensure your website runs smoothly
-          and complies with the latest web trends and technologies.
+          or a more advanced user experience, we can help you achieve it.
+          <br />
+          <br />
+          We offer design, development, and maintenance. We ensure your website runs smoothly and complies with the latest web trends and technologies.
         </Service>
       </Box>
     </Box>
