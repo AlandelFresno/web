@@ -33,7 +33,7 @@ const HomeSection: FC = () => {
           </Heading>
         </Box>
         <Text color={'gray.600'} fontSize={'xl'} width={'80%'}>
-          Leave the hard work to us and see your social media reach grow exponentially with our tailored strategies
+          Leave the hard work to us and see your business online presence grow with our tailored strategies
         </Text>
         <Link href={'#contact'}>
           <Button
@@ -51,7 +51,7 @@ const HomeSection: FC = () => {
         </Link>
       </Box>
       <Box display={{ base: 'none', lg: 'block' }} marginBlock={'auto'}>
-        <Image alt={'wave design'} src={'/assets/collaboration.svg'} width={900} height={900} />
+        <Image alt={'A photo of a team working together to draw a chart'} src={'/assets/collaboration.svg'} width={900} height={900} />
       </Box>
     </SimpleGrid>
   );

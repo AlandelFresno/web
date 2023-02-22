@@ -5,10 +5,6 @@ import { AiOutlineInstagram, AiOutlineFacebook, AiOutlineLinkedin } from 'react-
 import Link from 'next/link';
 
 const Footer: FC = () => {
-  const goToTheTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
   return (
     <Box
       {...defaultResponsive}
@@ -40,9 +36,11 @@ const Footer: FC = () => {
             <IconButton size={'sm'} _hover={{ bgColor: '#37a6ff14' }} variant={'ghost'} aria-label="Facebook Link" icon={<AiOutlineFacebook size={'25px'} />} />
           </Link>
         </Box>
-        <Button onClick={goToTheTop} _hover={{ bgColor: '#37a6ff14' }} variant={'ghost'}>
-          <Text fontWeight={'medium'}>To the top</Text>
-        </Button>
+        <Link href={'#home'}>
+          <Button _hover={{ bgColor: '#37a6ff14' }} variant={'ghost'}>
+            <Text fontWeight={'medium'}>To the top</Text>
+          </Button>
+        </Link>
       </Box>
     </Box>
   );

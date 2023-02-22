@@ -4,6 +4,7 @@ body {
   margin: 0;
   height: 100vh;
   scroll-behavior: smooth !important;
+  font-family: Roboto !important;
 }
 
 #wave-vector-top {

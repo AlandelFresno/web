@@ -1,4 +1,4 @@
-import { Box, Grid, GridItem, Heading, SimpleGrid, Text } from '@chakra-ui/react';
+import { Box, Grid, GridItem, Heading, Text } from '@chakra-ui/react';
 import Image from 'next/image';
 import React, { FC } from 'react';
 
@@ -46,7 +46,7 @@ const Approach: FC<Props> = ({ heading, children, imagePath, imageAlt, scale, to
           position={'relative'}
           top={topOffset}
           transform={`scale(${scale})`}>
-          <Image alt={imageAlt ?? 'An irrelevant icon'} src={imagePath} fill style={{ objectFit: 'contain' }} />
+          <Image alt={imageAlt ?? 'An irrelevant image'} src={imagePath} layout={'fill'} style={{ objectFit: 'contain' }} />
         </Box>
       </GridItem>
     </Grid>

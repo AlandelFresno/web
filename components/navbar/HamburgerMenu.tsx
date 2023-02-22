@@ -8,17 +8,20 @@ const HamburgerMenu = () => {
     <Menu>
       <MenuButton as={IconButton} aria-label="Options" icon={<GiHamburgerMenu />} variant="outline" />
       <MenuList>
-        <MenuItem as={Link} href="#home">
-          Home
+        <MenuItem>
+          <Link href="#home">Home</Link>
         </MenuItem>
-        <MenuItem as={Link} href="#approach">
-          Approach
+        <MenuItem>
+          <Link href="#approach">Approach</Link>
         </MenuItem>
-        <MenuItem as={Link} href="#services">
-          Services
+        <MenuItem>
+          <Link href="#services">Services</Link>
         </MenuItem>
-        <MenuItem as={Link} href="#about">
-          About
+        <MenuItem>
+          <Link href="#about">About</Link>
+        </MenuItem>
+        <MenuItem>
+          <Link href="#contact">Contact</Link>
         </MenuItem>
       </MenuList>
     </Menu>
