@@ -4,7 +4,7 @@ import { AiFillCheckCircle, AiFillCloseCircle } from 'react-icons/ai';
 
 const DosAndDontsList = () => {
   return (
-    <Box marginTop={'200px'} display={'flex'}>
+    <Box marginTop={'100px'} display={'flex'}>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={{ base: 20, md: 10 }}>
         <Box gridArea={{ md: '1 / 1' }} display={'flex'} flexDir={'column'} gap={{ base: '25px', md: '60px' }}>
           <Heading textAlign={'center'} marginInline={'auto'} size={'xl'}>

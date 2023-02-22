@@ -28,7 +28,9 @@ const Home: NextPage = () => {
       />
       <Box pos={'absolute'} backdropFilter={'blur(4.5px)'} bgSize={'cover'} zIndex={'-1'} height={'100%'} width={'100%'} />
       <HomeSection />
-      <Image id={'wave-vector-top'} alt={'An illustration of a black wave'} src={'/assets/wavetop.svg'} width={100} height={100} />
+      <Box width={'100%'} position={'relative'} height={{ base: '150px', sm: '200px', lg: '300px' }} overflow={'hidden'}>
+        <Image id={'wave-vector-top'} alt={'An illustration of a black wave'} src={'/assets/wavetop.svg'} fill />
+      </Box>
       <Box
         className="wapa"
         position={'relative'}
@@ -41,7 +43,6 @@ const Home: NextPage = () => {
         paddingBottom={'50px'}
         minHeight={'100vh'}>
         <Box
-          className="svg-shadow"
           pos={'absolute'}
           bgPos={'center'}
           bgSize={'cover'}
@@ -57,7 +58,9 @@ const Home: NextPage = () => {
         <AboutSection />
         <ContactSection />
       </Box>
-      <Image id={'wave-vector-bottom'} alt={'An illustration of a black wave'} src={'/assets/wavebottom.svg'} width={100} height={100} />
+      <Box width={'100%'} position={'relative'} height={'70px'} overflow={'hidden'}>
+        <Image id={'wave-vector-bottom'} alt={'An illustration of a black wave'} src={'/assets/wavebottom.svg'} fill />
+      </Box>
     </MainLayout>
   );
 };

@@ -18,17 +18,3 @@ body {
   transform: scale(-1, -1);
 }
 
-.svg-shadow {
-  animation: svg-shadow 1.5s ease-in-out infinite alternate;
-}
-
-@keyframes svg-shadow {
-  from {
-    filter: drop-shadow(0 0 5px #12343b) drop-shadow(0 0 15px #090f20) drop-shadow(0 0 20px #172038);
-  }
-
-  to {
-    filter: drop-shadow(0 0 20px #173d46) drop-shadow(0 0 25px #0c101b) drop-shadow(0 0 40px #182033);
-  }
-}
-
