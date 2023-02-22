@@ -47,7 +47,7 @@ const Home: NextPage = () => {
           bgPos={'center'}
           bgSize={'cover'}
           zIndex={'-1'}
-          filter={'drop-shadow(0 0 5px #12343b) drop-shadow(0 0 15px #090f20) drop-shadow(0 0 20px #172038)'}
+          // filter={'drop-shadow(0 0 5px #12343b) drop-shadow(0 0 15px #090f20) drop-shadow(0 0 20px #172038)'}
           opacity={'0.40'}
           bgImage={'./assets/moon-background.svg'}
           height={'100%'}
